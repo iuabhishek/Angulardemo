@@ -1,0 +1,19 @@
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>City</th>
+    <th>Age</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let l of service.list">
+    <td>{{l.Name}}</td>
+    <td>{{l.Phone}}</td>
+    <td>{{l.City}}</td>
+    <td>{{l.Age}}</td>
+    <td><i class="fas fa-edit" (click)="LoadData(l)"></i></td>
+    <td><i class="fas fa-trash-alt" (click)="deleteRecords(l.Stu_id)"></i></td>
+  </tr>
+  
+</table>
